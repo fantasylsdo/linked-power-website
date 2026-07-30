@@ -1,17 +1,177 @@
 ---
-
+import '../styles/global.css';
+import SiteHeader from '../components/SiteHeader.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.loli.net" />
+    <link rel="preconnect" href="https://gstatic.loli.net" crossorigin />
+    <link
+      href="https://fonts.loli.net/css2?family=Barlow:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Linked Power</title>
+    <meta
+      name="description"
+      content="Linked Power 提供 PM8000 电能质量监测与能源管理解决方案，支持电能数据采集、质量分析与智能诊断。"
+    />
+  </head>
+  <body class="bg-white text-slate-900 antialiased">
+    <SiteHeader />
+
+    <main class="mx-auto max-w-6xl px-5 pb-16">
+      <section id="about" class="pt-8">
+        <div class="mb-4">
+          <h2 class="mb-2 max-w-[20ch] text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:text-3xl">
+            我们交付的不只是监测数据，而是可衡量的能源管理价值
+          </h2>
+          <p class="max-w-[64ch] text-[1.04rem] leading-relaxed text-slate-600 p-5"">
+            依托 PM8000 电能质量监测仪，将配电系统数据、能耗趋势与异常情况实时转化为可执行的运营洞察，帮助企业提升供电可靠性、降低能源成本并推动智能运维升级。
+          </p>
+
+          <div class=" flex flex-wrap gap-3 p-5">
+            <a
+              class="inline-flex items-center justify-center bg-brand-red px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-red-dark"
+              href="#contact"
+            >
+              预约咨询
+            </a>
+            <a
+              class="inline-flex items-center justify-center border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-900 transition-colors hover:border-brand-red hover:text-brand-red"
+              href="#products"
+            >
+              查看产品
+            </a>
+          </div>
+
+          <div class="grid gap-3 md:grid-cols-3 p-5">
+            <div class="border border-slate-200 bg-white px-4 py-3">
+              <span class="block text-xs text-slate-500">电能数据覆盖</span>
+              <strong class="text-lg font-bold text-slate-900">100%</strong>
+            </div>
+            <div class="border border-slate-200 bg-white px-4 py-3">
+              <span class="block text-xs text-slate-500">异常定位效率</span>
+              <strong class="text-lg font-bold text-slate-900">2x</strong>
+            </div>
+            <div class="border border-slate-200 bg-white px-4 py-3">
+              <span class="block text-xs text-slate-500">能源洞察实时性</span>
+              <strong class="text-lg font-bold text-slate-900">实时</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="pt-8">
+        <div class="mb-4">
+          <p class="mb-2 text-sm font-semibold uppercase tracking-[0.16em] text-brand-red">产品系列</p>
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">核心产品：PM8000 电能质量监测仪</h2>
+        </div>
+
+        <article class="grid gap-6 bg-white p-5 lg:grid-cols-[1.15fr_0.85fr]">
+          <div>
+            <h3 class="mb-2 text-xl font-semibold text-slate-900">PM8000 电能质量监测仪</h3>
+            <p class="text-slate-600">
+              面向关键配电系统与高耗能生产环境，PM8000 提供从设备级数据采集到系统级质量分析的一体化监测能力，帮助企业建立可追溯、可优化的能源管理闭环。
+            </p>
+            <ul class="mt-3 list-disc space-y-1 pl-5 text-slate-600">
+              <li>覆盖电压、电流、频率、谐波等关键参数，提升能源使用透明度</li>
+              <li>实时识别电压波动、谐波风险与异常工况，快速定位潜在隐患</li>
+              <li>开放式通信接口，便于与能源管理系统、SCADA 与运维平台联动</li>
+            </ul>
+          </div>
+
+          <figure class="h-70 overflow-hidden p-3">
+            <img
+              src="/pl8000.jpg"
+              alt="PM8000 电能质量监测仪"
+              class="h-full w-full object-contain"
+              loading="lazy"
+            />
+          </figure>
+        </article>
+      </section>
+
+      <section id="cases" class="pt-8">
+        <div class="mb-4">
+          <p class="mb-2 text-sm font-semibold uppercase tracking-[0.16em] text-brand-red">案例</p>
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">食品包装产线升级项目（示例）</h2>
+        </div>
+
+        <article class="bg-white p-5">
+          <p class="text-slate-600">
+            某制造企业在多条生产线并联运行时，持续出现电压波动与谐波扰动，影响设备稳定性与能耗管理。通过 PM8000 的实时监测与诊断能力，客户实现了异常定位效率提升和能效管理的可视化。
+          </p>
+          <div class="mt-4 grid gap-3 md:grid-cols-3">
+            <div class="border border-slate-200 bg-white px-4 py-3">
+              <span class="block text-xs text-slate-500">异常定位时间</span>
+              <strong class="text-lg font-bold text-slate-900">-45%</strong>
+            </div>
+            <div class="border border-slate-200 bg-white px-4 py-3">
+              <span class="block text-xs text-slate-500">电能质量风险识别</span>
+              <strong class="text-lg font-bold text-slate-900">+30%</strong>
+            </div>
+            <div class="border border-slate-200 bg-white px-4 py-3">
+              <span class="block text-xs text-slate-500">能耗管理透明度</span>
+              <strong class="text-lg font-bold text-slate-900">显著提升</strong>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="downloads" class="pt-8">
+        <div class="mb-4">
+          <p class="mb-2 text-sm font-semibold uppercase tracking-[0.16em] text-brand-red">资料下载</p>
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">产品与技术资料</h2>
+        </div>
+
+        <div class="grid gap-3 p-5">
+          <a
+            href="#"
+            class="flex flex-col justify-between gap-2 border border-slate-200 bg-white p-4 transition-colors hover:border-brand-red md:flex-row"
+          >
+            <strong class="text-slate-900">PM8000 产品手册（PDF）</strong>
+            <span class="text-sm text-slate-500">版本 2026.07 · 12MB</span>
+          </a>
+          <a
+            href="#"
+            class="flex flex-col justify-between gap-2 border border-slate-200 bg-white p-4 transition-colors hover:border-brand-red md:flex-row"
+          >
+            <strong class="text-slate-900">电能质量诊断与应用白皮书（PDF）</strong>
+            <span class="text-sm text-slate-500">版本 2026.04 · 8MB</span>
+          </a>
+          <a
+            href="#"
+            class="flex flex-col justify-between gap-2 border border-slate-200 bg-white p-4 transition-colors hover:border-brand-red md:flex-row"
+          >
+            <strong class="text-slate-900">系统接入与部署指南（PDF）</strong>
+            <span class="text-sm text-slate-500">版本 2026.06 · 15MB</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="pt-8">
+        <div class="mb-4">
+          <p class="mb-2 text-sm font-semibold uppercase tracking-[0.16em] text-brand-red">联系我们</p>
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">把您的配电目标和能源痛点告诉我们，我们给出专业方案建议</h2>
+        </div>
+
+        <div class="grid gap-6 rounded-lg bg-white p-5 lg:grid-cols-2">
+          <div class="space-y-2 text-slate-700">
+            <p><strong>销售咨询：</strong>+86 0513-88888888</p>
+            <p><strong>技术支持：</strong>+86 0513-88888999</p>
+            <p><strong>邮箱：</strong>contact@linked-power.com</p>
+            <p><strong>地址：</strong>上海市临港南桥科技城 29栋 505 室</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-8 text-center text-sm text-slate-500">
+        <p>© 2026 Linked Power. All Rights Reserved.</p>
+      </section>
+    </main>
+  </body>
 </html>
