@@ -41,12 +41,13 @@ const switchAria = locale === 'en' ? 'Switch to Chinese' : 'Switch to English';
       >
         {switchLabel}
       </a>
-      <a
+      <button
+        type="button"
+        data-open-consult-form
         class="rounded-full bg-brand-red px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-brand-red-dark"
-        href={`${basePath}/#contact`}
       >
         {t.nav.cta}
-      </a>
+      </button>
     </div>
 
     <button
@@ -78,9 +79,13 @@ const switchAria = locale === 'en' ? 'Switch to Chinese' : 'Switch to English';
         >
           {switchLabel}
         </a>
-        <a class="inline-flex w-fit rounded-full bg-brand-red px-4 py-2 text-sm font-semibold text-white" href={`${basePath}/#contact`}>
+        <button
+          type="button"
+          data-open-consult-form
+          class="inline-flex w-fit rounded-full bg-brand-red px-4 py-2 text-sm font-semibold text-white"
+        >
           {t.nav.cta}
-        </a>
+        </button>
       </div>
     </div>
   </div>

@@ -64,6 +64,16 @@ export type HomeContent = {
     emailLabel: string;
     addressLabel: string;
     addressValue: string;
+    formTitle: string;
+    formNameLabel: string;
+    formPhoneLabel: string;
+    formCompanyLabel: string;
+    formMessageLabel: string;
+    formSubmit: string;
+    formCancel: string;
+    formSubmitting: string;
+    formSuccess: string;
+    formError: string;
   };
   footer: {
     copyright: string;
@@ -88,7 +98,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       title: '我们交付的不只是监测数据，而是可衡量的能源管理价值',
       desc:
         '依托 PM8000 电能质量监测仪，将配电系统数据、能耗趋势与异常情况实时转化为可执行的运营洞察，帮助企业提升供电可靠性、降低能源成本并推动智能运维升级。',
-      ctaConsult: '预约咨询',
+      ctaConsult: '立即咨询',
       ctaProduct: '查看产品',
       videoTag: '宣传视频',
       videoFallback: '您的浏览器不支持视频播放。',
@@ -139,6 +149,16 @@ export const homeContent: Record<Locale, HomeContent> = {
       emailLabel: '邮箱：',
       addressLabel: '地址：',
       addressValue: '上海市临港南桥科技城 29栋 505 室',
+      formTitle: '提交需求，我们将尽快联系您',
+      formNameLabel: '姓名',
+      formPhoneLabel: '电话',
+      formCompanyLabel: '公司（可选）',
+      formMessageLabel: '需求说明',
+      formSubmit: '提交咨询',
+      formCancel: '取消',
+      formSubmitting: '提交中...',
+      formSuccess: '提交成功，我们会尽快与您联系。',
+      formError: '提交失败，请稍后重试。',
     },
     footer: {
       copyright: '© 2026 Linked Power. All Rights Reserved.',
@@ -161,7 +181,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       title: 'We Deliver More Than Monitoring Data, We Deliver Measurable Energy Value',
       desc:
         'With PM8000 power quality monitoring, we transform distribution data, energy trends, and anomalies into actionable insights to improve power reliability, reduce energy cost, and accelerate smart O&M.',
-      ctaConsult: 'Book Consultation',
+      ctaConsult: 'Consult Now',
       ctaProduct: 'View Product',
       videoTag: 'Promo Video',
       videoFallback: 'Your browser does not support video playback.',
@@ -212,6 +232,16 @@ export const homeContent: Record<Locale, HomeContent> = {
       emailLabel: 'Email: ',
       addressLabel: 'Address: ',
       addressValue: 'Room 505, Building 29, Lingang Nanqiao Tech City, Shanghai',
+      formTitle: 'Tell us your requirements and we will contact you soon',
+      formNameLabel: 'Name',
+      formPhoneLabel: 'Phone',
+      formCompanyLabel: 'Company (Optional)',
+      formMessageLabel: 'Message',
+      formSubmit: 'Submit Inquiry',
+      formCancel: 'Cancel',
+      formSubmitting: 'Submitting...',
+      formSuccess: 'Submitted successfully. We will contact you soon.',
+      formError: 'Submission failed. Please try again later.',
     },
     footer: {
       copyright: '© 2026 Linked Power. All Rights Reserved.',
