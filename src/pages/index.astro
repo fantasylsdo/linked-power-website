@@ -24,28 +24,47 @@ import SiteHeader from '../components/SiteHeader.astro';
     <SiteHeader />
 
     <main class="mx-auto max-w-6xl px-5 pb-16">
-      <section id="about" class="pt-8">
+      <section id="about" class="scroll-mt-24 pt-8">
         <div class="mb-4">
-          <h2 class="mb-2 max-w-[20ch] text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:text-3xl">
-            我们交付的不只是监测数据，而是可衡量的能源管理价值
-          </h2>
-          <p class="max-w-[64ch] text-[1.04rem] leading-relaxed text-slate-600 p-5"">
-            依托 PM8000 电能质量监测仪，将配电系统数据、能耗趋势与异常情况实时转化为可执行的运营洞察，帮助企业提升供电可靠性、降低能源成本并推动智能运维升级。
-          </p>
+          <div class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+            <div>
+              <h2 class="mb-2 max-w-[20ch] text-2xl font-bold leading-tight tracking-tight text-slate-900 sm:text-3xl">
+                我们交付的不只是监测数据，而是可衡量的能源管理价值
+              </h2>
+              <p class="max-w-[64ch] text-[1.04rem] leading-relaxed text-slate-600 p-5"">
+                依托 PM8000 电能质量监测仪，将配电系统数据、能耗趋势与异常情况实时转化为可执行的运营洞察，帮助企业提升供电可靠性、降低能源成本并推动智能运维升级。
+              </p>
 
-          <div class=" flex flex-wrap gap-3 p-5">
-            <a
-              class="inline-flex items-center justify-center bg-brand-red px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-red-dark"
-              href="#contact"
-            >
-              预约咨询
-            </a>
-            <a
-              class="inline-flex items-center justify-center border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-900 transition-colors hover:border-brand-red hover:text-brand-red"
-              href="#products"
-            >
-              查看产品
-            </a>
+              <div class="flex flex-wrap gap-3 p-5">
+                <a
+                  class="inline-flex items-center justify-center bg-brand-red px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-red-dark"
+                  href="#contact"
+                >
+                  预约咨询
+                </a>
+                <a
+                  class="inline-flex items-center justify-center border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-900 transition-colors hover:border-brand-red hover:text-brand-red"
+                  href="#products"
+                >
+                  查看产品
+                </a>
+              </div>
+            </div>
+
+            <div class="rounded-xl p-4">
+              <video
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                class="w-full rounded-lg bg-black"
+              >
+                <source src="/hero.mp4" type="video/mp4" />
+                您的浏览器不支持视频播放。
+              </video>
+            </div>
           </div>
 
           <div class="grid gap-3 md:grid-cols-3 p-5">
@@ -65,7 +84,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         </div>
       </section>
 
-      <section id="products" class="pt-8">
+      <section id="products" class="scroll-mt-24 pt-8">
         <div class="mb-4">
           <p class="mb-2 text-sm font-semibold uppercase tracking-[0.16em] text-brand-red">产品系列</p>
           <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">核心产品：PM8000 电能质量监测仪</h2>
@@ -95,7 +114,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         </article>
       </section>
 
-      <section id="cases" class="pt-8">
+      <section id="cases" class="scroll-mt-24 pt-8">
         <div class="mb-4">
           <p class="mb-2 text-sm font-semibold uppercase tracking-[0.16em] text-brand-red">案例</p>
           <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">食品包装产线升级项目（示例）</h2>
@@ -122,7 +141,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         </article>
       </section>
 
-      <section id="downloads" class="pt-8">
+      <section id="downloads" class="scroll-mt-24 pt-8">
         <div class="mb-4">
           <p class="mb-2 text-sm font-semibold uppercase tracking-[0.16em] text-brand-red">资料下载</p>
           <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">产品与技术资料</h2>
@@ -153,10 +172,12 @@ import SiteHeader from '../components/SiteHeader.astro';
         </div>
       </section>
 
-      <section id="contact" class="pt-8">
+      <section id="contact" class="scroll-mt-24 pt-8">
         <div class="mb-4">
           <p class="mb-2 text-sm font-semibold uppercase tracking-[0.16em] text-brand-red">联系我们</p>
-          <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">把您的配电目标和能源痛点告诉我们，我们给出专业方案建议</h2>
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+            从配电需求到能源优化，<br />我们为您提供专业技术支持与解决方案
+          </h2>
         </div>
 
         <div class="grid gap-6 rounded-lg bg-white p-5 lg:grid-cols-2">
@@ -169,7 +190,7 @@ import SiteHeader from '../components/SiteHeader.astro';
         </div>
       </section>
 
-      <section class="pt-8 text-center text-sm text-slate-500">
+      <section class="scroll-mt-24 pt-8 text-center text-sm text-slate-500">
         <p>© 2026 Linked Power. All Rights Reserved.</p>
       </section>
     </main>
