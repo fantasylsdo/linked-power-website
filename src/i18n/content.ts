@@ -77,6 +77,8 @@ export type HomeContent = {
     salesLabel: string;
     supportLabel: string;
     emailLabel: string;
+    companyLabel: string;
+    companyName: string;
     addressLabel: string;
     addressValue: string;
     formTitle: string;
@@ -99,7 +101,7 @@ export const homeContent: Record<Locale, HomeContent> = {
   zh: {
     htmlLang: 'zh-CN',
     metaDescription:
-      'Linked Power 提供 PM8000 电能质量监测与能源管理解决方案，支持电能数据采集、质量分析与智能诊断。',
+      'Linked Power 提供 PL8000 电能质量监测与能源管理解决方案，支持电能数据采集、质量分析与智能诊断。',
     nav: {
       home: '首页',
       about: '关于我们',
@@ -112,7 +114,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     about: {
       title: '我们交付的不只是监测数据，而是可衡量的能源管理价值',
       desc:
-        '依托 PM8000 电能质量监测仪，将配电系统数据、能耗趋势与异常情况实时转化为可执行的运营洞察，帮助企业提升供电可靠性、降低能源成本并推动智能运维升级。',
+        '依托 PL8000 电能质量监测仪，将配电系统数据、能耗趋势与异常情况实时转化为可执行的运营洞察，帮助企业提升供电可靠性、降低能源成本并推动智能运维升级。',
       ctaConsult: '立即咨询',
       ctaProduct: '查看产品',
       videoTag: '宣传视频',
@@ -149,7 +151,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       tag: '案例',
       title: '食品包装产线升级项目（示例）',
       desc:
-        '某制造企业在多条生产线并联运行时，持续出现电压波动与谐波扰动，影响设备稳定性与能耗管理。通过 PM8000 的实时监测与诊断能力，客户实现了异常定位效率提升和能效管理的可视化。',
+        '某制造企业在多条生产线并联运行时，持续出现电压波动与谐波扰动，影响设备稳定性与能耗管理。通过 PL8000 的实时监测与诊断能力，客户实现了异常定位效率提升和能效管理的可视化。',
       kpi1Label: '异常定位时间',
       kpi2Label: '电能质量风险识别',
       kpi3Label: '能耗管理透明度',
@@ -158,7 +160,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     downloads: {
       tag: '资料下载',
       title: '产品与技术资料',
-      item1: 'PM8000 产品手册（PDF）',
+      item1: 'PL8000 产品手册（PDF）',
       meta1: '版本 2026.07 · 12MB',
       item2: '电能质量诊断与应用白皮书（PDF）',
       meta2: '版本 2026.04 · 8MB',
@@ -172,6 +174,8 @@ export const homeContent: Record<Locale, HomeContent> = {
       salesLabel: '销售咨询：',
       supportLabel: '技术支持：',
       emailLabel: '邮箱：',
+      companyLabel: '公司名称：',
+      companyName: '上海链能科技有限公司',
       addressLabel: '地址：',
       addressValue: '上海市临港南桥科技城 29栋 505 室',
       formTitle: '提交需求，我们将尽快联系您',
@@ -192,7 +196,7 @@ export const homeContent: Record<Locale, HomeContent> = {
   en: {
     htmlLang: 'en',
     metaDescription:
-      'Linked Power provides PM8000 power quality monitoring and energy management solutions with data acquisition, quality analytics, and intelligent diagnostics.',
+      'Linked Power provides PL8000 power quality monitoring and energy management solutions with data acquisition, quality analytics, and intelligent diagnostics.',
     nav: {
       home: 'Home',
       about: 'About',
@@ -205,7 +209,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     about: {
       title: 'We Deliver More Than Monitoring Data, We Deliver Measurable Energy Value',
       desc:
-        'With PM8000 power quality monitoring, we transform distribution data, energy trends, and anomalies into actionable insights to improve power reliability, reduce energy cost, and accelerate smart O&M.',
+        'With PL8000 power quality monitoring, we transform distribution data, energy trends, and anomalies into actionable insights to improve power reliability, reduce energy cost, and accelerate smart O&M.',
       ctaConsult: 'Consult Now',
       ctaProduct: 'View Product',
       videoTag: 'Promo Video',
@@ -242,7 +246,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       tag: 'Case Study',
       title: 'Food Packaging Line Upgrade (Sample)',
       desc:
-        'A manufacturer running multiple parallel production lines faced recurring voltage fluctuation and harmonic interference. With PM8000 real-time monitoring and diagnostics, they improved troubleshooting speed and gained clearer energy visibility.',
+        'A manufacturer running multiple parallel production lines faced recurring voltage fluctuation and harmonic interference. With PL8000 real-time monitoring and diagnostics, they improved troubleshooting speed and gained clearer energy visibility.',
       kpi1Label: 'Issue Location Time',
       kpi2Label: 'Power Risk Detection',
       kpi3Label: 'Energy Transparency',
@@ -251,7 +255,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     downloads: {
       tag: 'Downloads',
       title: 'Product and Technical Materials',
-      item1: 'PM8000 Product Brochure (PDF)',
+      item1: 'PL8000 Product Brochure (PDF)',
       meta1: 'Version 2026.07 · 12MB',
       item2: 'Power Quality Diagnostic White Paper (PDF)',
       meta2: 'Version 2026.04 · 8MB',
@@ -265,6 +269,8 @@ export const homeContent: Record<Locale, HomeContent> = {
       salesLabel: 'Sales: ',
       supportLabel: 'Support: ',
       emailLabel: 'Email: ',
+      companyLabel: 'Company: ',
+      companyName: 'Shanghai Linked Power Technology Co., Ltd.',
       addressLabel: 'Address: ',
       addressValue: 'Room 505, Building 29, Lingang Nanqiao Tech City, Shanghai',
       formTitle: 'Tell us your requirements and we will contact you soon',
