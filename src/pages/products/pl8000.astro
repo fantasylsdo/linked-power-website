@@ -1,0 +1,318 @@
+---
+import '../../styles/global.css';
+import SiteHeader from '../../components/SiteHeader.astro';
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>PL8000 智能电力监测终端 | Linked Power</title>
+  </head>
+
+  <body class="bg-white text-slate-900 antialiased">
+    <SiteHeader locale="zh" />
+
+    <main class="mx-auto max-w-6xl px-5 pb-16">
+
+      <!-- 面包屑 -->
+      <div class="pt-8 text-sm text-slate-500">
+        <a
+          href="/"
+          class="hover:text-brand-red"
+        >
+          首页
+        </a>
+
+        <span class="px-2">/</span>
+
+        <span>电力监测终端</span>
+      </div>
+
+      <!-- Hero -->
+      <section
+        class="grid gap-10 py-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:py-14"
+      >
+        <!-- Hero 图片 -->
+        <div
+          class="order-2 relative flex min-h-80 items-center justify-center p-6 lg:order-1"
+          data-pl8000-carousel
+        >
+          <div class="relative h-80 w-full">
+            <img
+              src="/pl8000/pl8000-view1.png"
+              alt="PaiLogicTM PL8000 智能电力监测终端正面视图"
+              class="absolute inset-0 h-full w-full object-contain opacity-100 transition-opacity duration-500"
+              data-pl8000-slide
+            />
+            <img
+              src="/pl8000/pl8000-view2.png"
+              alt="PaiLogicTM PL8000 智能电力监测终端侧面视图"
+              class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
+              data-pl8000-slide
+            />
+            <img
+              src="/pl8000/pl8000-view3.jpg"
+              alt="PaiLogicTM PL8000 智能电力监测终端应用视图"
+              class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
+              data-pl8000-slide
+            />
+            <img
+              src="/pl8000/pl8000-view4.jpg"
+              alt="PaiLogicTM PL8000 智能电力监测终端界面视图"
+              class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
+              data-pl8000-slide
+            />
+          </div>
+
+          <button
+            type="button"
+            class="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-xl text-slate-700 shadow-sm hover:bg-white"
+            data-pl8000-prev
+            aria-label="上一张产品视图"
+          >
+            ‹
+          </button>
+          <button
+            type="button"
+            class="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-xl text-slate-700 shadow-sm hover:bg-white"
+            data-pl8000-next
+            aria-label="下一张产品视图"
+          >
+            ›
+          </button>
+
+          <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+            <button type="button" class="h-2.5 w-2.5 rounded-full bg-brand-red" data-pl8000-dot aria-label="查看第 1 张产品视图"></button>
+            <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-pl8000-dot aria-label="查看第 2 张产品视图"></button>
+            <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-pl8000-dot aria-label="查看第 3 张产品视图"></button>
+            <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-pl8000-dot aria-label="查看第 4 张产品视图"></button>
+          </div>
+        </div>
+
+        <!-- Hero 内容 -->
+        <div class="order-1 lg:order-2">
+          <h1
+            class="max-w-[22ch] text-3xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl"
+          >
+            PaiLogicTM PL8000 智能电力监测终端
+          </h1>
+
+          <p
+            class="mt-6 max-w-[60ch] text-lg leading-relaxed text-slate-600"
+          >
+            面向新型电力系统打造的高端电力监测终端，兼顾实时测控与多样化应用需求。
+          </p>
+        </div>
+      </section>
+
+      <!-- 产品内容 -->
+      <div class="space-y-10 py-8">
+
+        <!-- 产品概述 -->
+        <section
+          id="overview"
+          class="scroll-mt-24 pt-8"
+        >
+          <h2 class="text-2xl font-bold text-[#101b70]">
+            产品概述
+          </h2>
+
+          <p
+            class="mt-4 max-w-4xl text-base leading-8 text-slate-600"
+          >
+            PL8000 按照国际大公司产品标准精心打造，内嵌 Linux 和 RTOS
+            两套系统，同时满足实时测控和应用多样性的双重需求。
+          </p>
+        </section>
+
+        <!-- 基础功能 -->
+        <section
+          id="base-functions"
+          class="scroll-mt-24 pt-8"
+        >
+          <h2 class="text-2xl font-bold text-[#101b70]">
+            基础功能
+          </h2>
+
+          <ul class="mt-5 space-y-4">
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              全电力参数测量，电力参数更新速率达到半波（10ms@50Hz）。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              对电能质量持续无间隙监测，记录电能质量事件发生的精确时间和数据。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              高分辨率彩色触摸显示屏，分辨率 640×480 像素。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              8GB 数据存储，可长周期存储细时间颗粒度历史数据。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              支持历史趋势、分时电能累计、电能质量事件等多种可配置参数记录。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              支持多达 20 个阈值比较器单元和 40 个布尔运算单元，
+              可配置任意报警和保护逻辑。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              支持 RS485 和 Ethernet 通讯网络及多种通讯协议。
+            </li>
+
+          </ul>
+        </section>
+
+        <!-- 可选增强功能 -->
+        <section
+          id="enhancements"
+          class="scroll-mt-24 pt-8"
+        >
+          <h2 class="text-2xl font-bold text-[#101b70]">
+            可选增强功能
+          </h2>
+
+          <ul class="mt-5 space-y-4">
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              可配置扩展数字和模拟 I/O 模块，例如温度监测。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              支持 PTP（IEEE 588）微秒级精确时间同步。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              支持电能质量事件、外部数字信号、用户指令及同步录波等多种录波触发模式。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              支持 PMU 同步相量测量单元。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              支持嵌入式软 PLC，按现场需求编写测控逻辑，实现实时本地测控。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              支持 AI 模型预测与控制，由终端内置 GPU 提供增强算力。
+            </li>
+
+          </ul>
+        </section>
+
+        <!-- 定制功能 -->
+        <section
+          id="customization"
+          class="scroll-mt-24 pt-8"
+        >
+          <h2 class="text-2xl font-bold text-[#101b70]">
+            定制功能
+          </h2>
+
+          <p
+            class="mt-4 text-base leading-8 text-slate-600"
+          >
+            可根据用户现场需求定制功能。
+          </p>
+        </section>
+
+      </div>
+
+    </main>
+  </body>
+</html>
+
+<script>
+  const carousel = document.querySelector('[data-pl8000-carousel]');
+
+  if (carousel) {
+    const slides = Array.from(carousel.querySelectorAll('[data-pl8000-slide]'));
+    const dots = Array.from(carousel.querySelectorAll('[data-pl8000-dot]'));
+    let activeIndex = 0;
+    let timer;
+
+    function showSlide(index) {
+      activeIndex = (index + slides.length) % slides.length;
+      slides.forEach((slide, slideIndex) => {
+        slide.classList.toggle('opacity-100', slideIndex === activeIndex);
+        slide.classList.toggle('opacity-0', slideIndex !== activeIndex);
+      });
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle('bg-brand-red', dotIndex === activeIndex);
+        dot.classList.toggle('bg-slate-300', dotIndex !== activeIndex);
+      });
+    }
+
+    function restartTimer() {
+      window.clearInterval(timer);
+      timer = window.setInterval(() => showSlide(activeIndex + 1), 2500);
+    }
+
+    carousel.querySelector('[data-pl8000-prev]')?.addEventListener('click', () => {
+      showSlide(activeIndex - 1);
+      restartTimer();
+    });
+    carousel.querySelector('[data-pl8000-next]')?.addEventListener('click', () => {
+      showSlide(activeIndex + 1);
+      restartTimer();
+    });
+    dots.forEach((dot, dotIndex) => {
+      dot.addEventListener('click', () => {
+        showSlide(dotIndex);
+        restartTimer();
+      });
+    });
+    carousel.addEventListener('mouseenter', () => window.clearInterval(timer));
+    carousel.addEventListener('mouseleave', restartTimer);
+    restartTimer();
+  }
+</script>

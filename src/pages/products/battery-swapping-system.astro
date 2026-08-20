@@ -1,0 +1,245 @@
+---
+import '../../styles/global.css';
+import SiteHeader from '../../components/SiteHeader.astro';
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>智能移动设备换电系统 | Linked Power</title>
+  </head>
+
+  <body class="bg-white text-slate-900 antialiased">
+    <SiteHeader locale="zh" />
+
+    <main class="mx-auto max-w-6xl px-5 pb-16">
+
+      <!-- 面包屑 -->
+      <div class="pt-8 text-sm text-slate-500">
+        <a
+          href="/"
+          class="hover:text-brand-red"
+        >
+          首页
+        </a>
+
+        <span class="px-2">/</span>
+
+        <span>移动设备能源系统</span>
+      </div>
+
+      <!-- Hero -->
+      <section
+        class="grid gap-10 py-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:py-14"
+      >
+        <!-- Hero 图片 -->
+        <figure
+          class="order-2 flex min-h-80 items-center justify-center p-6 lg:order-1"
+        >
+          <img
+            src="/battery-swap-hero.png"
+            alt="移动设备换电站系统"
+            class="max-h-[30rem] w-full object-contain"
+          />
+        </figure>
+
+        <!-- Hero 内容 -->
+        <div class="order-1 lg:order-2">
+          <h1
+            class="text-3xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl"
+          >
+            移动设备换电站系统
+          </h1>
+
+          <p
+            class="mt-6 max-w-[60ch] text-lg leading-relaxed text-slate-600"
+          >
+            集智能充电与快速换电于一体，为移动机器人、AGV、电动叉车等设备提供
+            7×24 小时不间断能源保障。
+          </p>
+
+        </div>
+      </section>
+
+      <!-- 产品内容 -->
+      <div class="space-y-10 py-8">
+
+        <!-- 系统概述 -->
+        <section
+          id="overview"
+          class="scroll-mt-24 pt-8"
+        >
+          <h2 class="text-2xl font-bold text-[#101b70]">
+            系统概述
+          </h2>
+
+          <div
+            class="mt-4 max-w-4xl space-y-4 text-base leading-8 text-slate-600"
+          >
+            <p>
+              在移动设备高频运转的今天，动力中断意味着效率折损、运维成本攀升，
+              甚至业务中断。移动设备电池站控制系统正是为解决这一痛点而生，
+              通过高度协同的软硬件架构，为各类移动设备持续供能。
+            </p>
+
+            <p>
+              系统以电池管理系统（BMS）为核心感知层，实时采集每块电池的电压、
+              电流、温度及剩余容量，结合功率分配器与主控板实现充电过程的毫秒级
+              动态调控，避免过充过放，并根据电池老化特性自适应调整充放电曲线，
+              延长电池循环寿命。
+            </p>
+
+            <p>
+              主控板与云端服务器保持双向数据同步，电池健康状态（SOH）、
+              充电记录和故障预警均可远程可视化管理，运维人员无需到场即可掌握全局。
+            </p>
+          </div>
+        </section>
+
+        <!-- 系统协同与应用 -->
+        <section
+          id="applications"
+          class="scroll-mt-24 pt-8"
+        >
+          <h2 class="text-2xl font-bold text-[#101b70]">
+            系统协同与应用
+          </h2>
+
+          <div
+            class="mt-4 max-w-4xl space-y-4 text-base leading-8 text-slate-600"
+          >
+            <p>
+              移动设备电池站系统可通过标准通信协议与微电网能源管理系统（EMS）
+              深度联动，根据电网负荷、电价时段或光伏出力智能调度充电功率与换电节奏，
+              削峰填谷并降低用能成本。
+            </p>
+
+            <p>
+              无论是单站独立部署还是多站集群管理，系统都能以稳定、精准、经济的表现，
+              成为移动设备车队可靠的能源大脑。
+            </p>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 产品与系统图示 -->
+      <section class="pt-8">
+        <h2 class="text-2xl font-bold text-[#101b70]">
+          产品与系统图示
+        </h2>
+
+        <div class="relative mt-5" data-battery-carousel>
+          <div class="relative h-[28rem] w-full">
+            <img
+              src="/battery-swap-dashboard.png"
+              alt="换电系统仪表盘"
+              class="absolute inset-0 h-full w-full object-contain opacity-100 transition-opacity duration-500"
+              data-battery-slide
+            />
+            <img
+              src="/battery-station-ui.png"
+              alt="换电站控制界面"
+              class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
+              data-battery-slide
+            />
+            <img
+              src="/battery-swap-forklift.png"
+              alt="电动叉车"
+              class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
+              data-battery-slide
+            />
+            <img
+              src="/battery-swap-drone.png"
+              alt="工业无人机"
+              class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
+              data-battery-slide
+            />
+            <img
+              src="/battery-swap-robot.png"
+              alt="移动机器人"
+              class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
+              data-battery-slide
+            />
+          </div>
+
+          <button
+            type="button"
+            class="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-xl text-slate-700 shadow-sm hover:bg-white"
+            data-battery-prev
+            aria-label="上一张系统图示"
+          >
+            ‹
+          </button>
+          <button
+            type="button"
+            class="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-xl text-slate-700 shadow-sm hover:bg-white"
+            data-battery-next
+            aria-label="下一张系统图示"
+          >
+            ›
+          </button>
+
+          <div class="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2">
+            <button type="button" class="h-2.5 w-2.5 rounded-full bg-brand-red" data-battery-dot aria-label="查看第 1 张系统图示"></button>
+            <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-battery-dot aria-label="查看第 2 张系统图示"></button>
+            <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-battery-dot aria-label="查看第 3 张系统图示"></button>
+            <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-battery-dot aria-label="查看第 4 张系统图示"></button>
+            <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-battery-dot aria-label="查看第 5 张系统图示"></button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>
+
+<script>
+  const batteryCarousel = document.querySelector('[data-battery-carousel]');
+
+  if (batteryCarousel) {
+    const slides = Array.from(batteryCarousel.querySelectorAll('[data-battery-slide]'));
+    const dots = Array.from(batteryCarousel.querySelectorAll('[data-battery-dot]'));
+    let activeIndex = 0;
+    let timer;
+
+    function showSlide(index) {
+      activeIndex = (index + slides.length) % slides.length;
+      slides.forEach((slide, slideIndex) => {
+        slide.classList.toggle('opacity-100', slideIndex === activeIndex);
+        slide.classList.toggle('opacity-0', slideIndex !== activeIndex);
+      });
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle('bg-brand-red', dotIndex === activeIndex);
+        dot.classList.toggle('bg-slate-300', dotIndex !== activeIndex);
+      });
+    }
+
+    function restartTimer() {
+      window.clearInterval(timer);
+      timer = window.setInterval(() => showSlide(activeIndex + 1), 4500);
+    }
+
+    batteryCarousel.querySelector('[data-battery-prev]')?.addEventListener('click', () => {
+      showSlide(activeIndex - 1);
+      restartTimer();
+    });
+    batteryCarousel.querySelector('[data-battery-next]')?.addEventListener('click', () => {
+      showSlide(activeIndex + 1);
+      restartTimer();
+    });
+    dots.forEach((dot, dotIndex) => {
+      dot.addEventListener('click', () => {
+        showSlide(dotIndex);
+        restartTimer();
+      });
+    });
+    batteryCarousel.addEventListener('mouseenter', () => window.clearInterval(timer));
+    batteryCarousel.addEventListener('mouseleave', restartTimer);
+    restartTimer();
+  }
+</script>

@@ -1,0 +1,274 @@
+---
+import '../../styles/global.css';
+import SiteHeader from '../../components/SiteHeader.astro';
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>智能微电网储能 EMS | Linked Power</title>
+  </head>
+
+  <body class="bg-white text-slate-900 antialiased">
+    <SiteHeader locale="zh" />
+
+    <main class="mx-auto max-w-6xl px-5 pb-16">
+
+      <!-- 面包屑 -->
+      <div class="pt-8 text-sm text-slate-500">
+        <a
+          href="/"
+          class="hover:text-brand-red"
+        >
+          首页
+        </a>
+
+        <span class="px-2">/</span>
+
+        <span>能源管理系统</span>
+      </div>
+
+      <!-- Hero -->
+      <section
+        class="grid gap-10 py-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:py-14"
+      >
+        <!-- Hero 图片 -->
+        <figure
+          class="order-2 flex min-h-80 items-center justify-center p-6 lg:order-1"
+        >
+          <img
+            src="/ems-system-architecture.png"
+            alt="PaiLogicTM 智能微网储能EMS"
+            class="max-h-[30rem] w-full object-contain"
+          />
+        </figure>
+
+        <!-- Hero 内容 -->
+        <div class="order-1 lg:order-2">
+          <h1
+            class="text-3xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl"
+          >
+            PaiLogicTM 智能微网储能EMS（能源管理系统）
+          </h1>
+
+          <p
+            class="mt-6 max-w-[60ch] text-lg leading-relaxed text-slate-600"
+          >
+            面向工商业场景，覆盖“源—网—荷—储”全链路的智能能量管理与优化调度系统，
+            帮助企业提升能源利用效率、降低用能成本。
+          </p>
+
+        </div>
+      </section>
+
+      <!-- 产品内容 -->
+      <div class="space-y-10 py-8">
+
+        <!-- 系统概述 -->
+        <section
+          id="overview"
+          class="scroll-mt-24 pt-8"
+        >
+          <h2 class="text-2xl font-bold text-[#101b70]">
+            系统概述
+          </h2>
+
+          <div
+            class="mt-4 max-w-4xl space-y-4 text-base leading-8 text-slate-600"
+          >
+            <p>
+              在全球能源结构加速转型与“双碳”目标纵深推进的背景下，
+              PaiLogicTM 智能微网储能EMS系统应运而生。
+              系统深度融合物联网、大数据与先进控制算法，专为工商业场景打造。
+            </p>
+
+            <p>
+              作为面向零碳园区、数字工厂及智慧楼宇的新一代 EMS 解决方案，
+              系统支持光伏、储能、充电桩及可调负载等多类分布式资源的协同管控，
+              通过预测性调控与动态策略优化平抑负荷波动、提升绿电消纳比例，
+              并保障关键负载的供电可靠性。
+            </p>
+
+            <p>
+              系统原生支持与企业现有 ERP、CRM 及工业 IoT 平台无缝集成，
+              构建统一的企业能源与运营数字底座，并通过机器学习与智能分析引擎
+              赋能生产排程、需求响应和碳资产管理。
+            </p>
+          </div>
+        </section>
+
+        <!-- 产品特征 -->
+        <section
+          id="features"
+          class="scroll-mt-24 pt-8"
+        >
+          <h2 class="text-2xl font-bold text-[#101b70]">
+            产品特征
+          </h2>
+
+          <ul class="mt-5 space-y-4">
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              全兼容，易扩展：支持微电网 EMS 与储能柜 EMS 模式，
+              可适配任意品牌设备。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              多场景运营：支持多重运营场景和完整运维功能，
+              覆盖手机端与 Web 端配置。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              云边协同：物模型快速适配需求，AI 云策略与本地控制无缝同步，
+              并支持 OTA 升级。
+            </li>
+          </ul>
+        </section>
+
+        <!-- 核心功能 -->
+        <section
+          id="functions"
+          class="scroll-mt-24 pt-8"
+        >
+          <h2 class="text-2xl font-bold text-[#101b70]">
+            核心功能
+          </h2>
+
+          <ul class="mt-5 space-y-4">
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              风光柴储多种设备协作：风光发电过剩时储能自动吸纳，
+              负荷高峰时智能联调柴发补电，同时支持防逆流、负荷跟踪
+              和实时最优调度。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              峰谷套利运行机制：融合实时电价与光伏、负荷预测，
+              优先协同光伏消纳，实现储能收益最大化并降低弃光率。
+            </li>
+
+            <li
+              class="flex gap-3 py-4 leading-7 text-slate-700"
+            >
+              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+              AI 加持：云端生成智能策略并下发本地安全验证执行，
+              本地 AI 功率分配算法根据电柜 SOC、效率和设备使用时长
+              进行实时优化与预测性维护。
+            </li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- 产品与系统图示 -->
+      <section class="pt-8">
+        <h2 class="text-2xl font-bold text-[#101b70]">
+          产品与系统图示
+        </h2>
+
+        <div class="relative mt-5" data-ems-carousel>
+          <div class="relative h-[28rem] w-full">
+            <img
+              src="/ems-operation-curves.png"
+              alt="EMS 运行曲线"
+              class="absolute inset-0 h-full w-full object-contain opacity-100 transition-opacity duration-500"
+              data-ems-slide
+            />
+            <img
+              src="/ems-system-architecture.png"
+              alt="EMS 系统架构图"
+              class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
+              data-ems-slide
+            />
+          </div>
+
+          <button
+            type="button"
+            class="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-xl text-slate-700 shadow-sm hover:bg-white"
+            data-ems-prev
+            aria-label="上一张系统图示"
+          >
+            ‹
+          </button>
+          <button
+            type="button"
+            class="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-xl text-slate-700 shadow-sm hover:bg-white"
+            data-ems-next
+            aria-label="下一张系统图示"
+          >
+            ›
+          </button>
+
+          <div class="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2">
+            <button type="button" class="h-2.5 w-2.5 rounded-full bg-brand-red" data-ems-dot aria-label="查看第 1 张系统图示"></button>
+            <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-ems-dot aria-label="查看第 2 张系统图示"></button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>
+
+<script>
+  const emsCarousel = document.querySelector('[data-ems-carousel]');
+
+  if (emsCarousel) {
+    const slides = Array.from(emsCarousel.querySelectorAll('[data-ems-slide]'));
+    const dots = Array.from(emsCarousel.querySelectorAll('[data-ems-dot]'));
+    let activeIndex = 0;
+    let timer;
+
+    function showSlide(index) {
+      activeIndex = (index + slides.length) % slides.length;
+      slides.forEach((slide, slideIndex) => {
+        slide.classList.toggle('opacity-100', slideIndex === activeIndex);
+        slide.classList.toggle('opacity-0', slideIndex !== activeIndex);
+      });
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle('bg-brand-red', dotIndex === activeIndex);
+        dot.classList.toggle('bg-slate-300', dotIndex !== activeIndex);
+      });
+    }
+
+    function restartTimer() {
+      window.clearInterval(timer);
+      timer = window.setInterval(() => showSlide(activeIndex + 1), 4500);
+    }
+
+    emsCarousel.querySelector('[data-ems-prev]')?.addEventListener('click', () => {
+      showSlide(activeIndex - 1);
+      restartTimer();
+    });
+    emsCarousel.querySelector('[data-ems-next]')?.addEventListener('click', () => {
+      showSlide(activeIndex + 1);
+      restartTimer();
+    });
+    dots.forEach((dot, dotIndex) => {
+      dot.addEventListener('click', () => {
+        showSlide(dotIndex);
+        restartTimer();
+      });
+    });
+    emsCarousel.addEventListener('mouseenter', () => window.clearInterval(timer));
+    emsCarousel.addEventListener('mouseleave', restartTimer);
+    restartTimer();
+  }
+</script>
