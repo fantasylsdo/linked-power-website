@@ -65,7 +65,8 @@ PORT=3001 node dist/server/entry.mjs
 - `package-lock.json`
 
 例如在本地项目根目录执行：
-
+scp -r dist/  package.json package-lock.json root@47.116.161.40:/var/www/linked-power-website/
+或
 ```bash
 rsync -av --delete \
   --exclude '.git' \
