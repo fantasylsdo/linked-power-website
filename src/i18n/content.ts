@@ -192,7 +192,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     },
     footer: {
       copyright: '© 2026 Linked Power. All Rights Reserved.',
-      filingNumber: '备案号：沪ICP备2025144532号',
+      filingNumber: '备案号：沪ICP备2025144532号-1',
     },
   },
   en: {
@@ -288,7 +288,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     },
     footer: {
       copyright: '© 2026 Linked Power. All Rights Reserved.',
-      filingNumber: 'ICP Filing: 沪ICP备2025144532号',
+      filingNumber: 'ICP Filing: 沪ICP备2025144532号-1',
     },
   },
 };
