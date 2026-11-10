@@ -95,6 +95,7 @@ export type HomeContent = {
   footer: {
     copyright: string;
     filingNumber: string;
+    publicSecurityFiling: string;
   };
 };
 
@@ -193,6 +194,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     footer: {
       copyright: '© 2026 Linked Power. All Rights Reserved.',
       filingNumber: '备案号：沪ICP备2025144532号-1',
+      publicSecurityFiling: '沪公网安备31012002007387号',
     },
   },
   en: {
@@ -289,6 +291,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     footer: {
       copyright: '© 2026 Linked Power. All Rights Reserved.',
       filingNumber: 'ICP Filing: 沪ICP备2025144532号-1',
+      publicSecurityFiling: '沪公网安备31012002007387号',
     },
   },
 };
