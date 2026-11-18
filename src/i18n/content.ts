@@ -116,7 +116,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     about: {
       title: '我们交付的不只是监测数据，而是可衡量的能源管理价值',
       desc:
-        '依托 PL8000 电能质量监测仪，将配电系统数据、能耗趋势与异常情况实时转化为可执行的运营洞察，帮助企业提升供电可靠性、降低能源成本并推动智能运维升级。',
+        '依托Linked-power 能源管理系统(LEMS)，PL8000电能质量分析仪及多功能电力仪表，将配电系统数据、能耗趋势与异常情况实时转化为可执行的运营洞察，帮助企业提升供电可靠性、降低能源成本并推动智能运维升级。',
       ctaConsult: '立即咨询',
       ctaProduct: '查看产品',
       videoTag: '宣传视频',
@@ -133,19 +133,19 @@ export const homeContent: Record<Locale, HomeContent> = {
       title: '产品系列',
       items: [
         {
-          name: 'PL8000 智能电力监测终端',
+          name: '电能质量分析仪及多功能电力仪表',
           desc: '让每一次异常无处遁形，让每一个事件可追溯。',
-          imageAlt: 'PL8000 智能电力监测终端临时图片',
+          imageAlt: '电能质量分析仪及多功能电力仪表',
         },
         {
-          name: '智能微电网储能EMS',
+          name: '智能微电网能源管理系统(EMS)',
           desc: '让每一度电用得最经济、最绿色。',
-          imageAlt: '智能微电网储能EMS临时图片',
+          imageAlt: '智能微电网储能EMS',
         },
         {
           name: '智能移动设备换电系统',
           desc: '让每一秒都创造效益，让每一次换电都无缝接力。',
-          imageAlt: '智能移动设备换电系统临时图片',
+          imageAlt: '智能移动设备换电系统',
         },
       ],
     },
@@ -334,10 +334,10 @@ export const productDetails: Record<Locale, Record<ProductKey, ProductDetail>> =
       ],
     },
     pl8000: {
-      name: 'PaiLogicTM PL8000 智能电力监测终端',
-      eyebrow: 'PL8000 智能电力监测终端',
+      name: 'PaiLogic™ PL8000 电能质量分析仪',
+      eyebrow: 'PL8000 电能质量分析仪',
       code: 'PL8000',
-      category: '电力监测终端',
+      category: '电能质量分析仪',
       summary: '面向新型电力系统打造的高端电力监测终端，兼顾实时测控与多样化应用需求。',
       specs: [
         { label: '操作系统', value: 'Linux + RTOS' },
@@ -369,7 +369,7 @@ export const productDetails: Record<Locale, Record<ProductKey, ProductDetail>> =
           bullets: [
             '可配置扩展数字和模拟 I/O 模块，例如温度监测。',
             '支持 PTP（IEEE 588）微秒级精确时间同步。',
-            '支持电能质量事件、外部数字信号、用户指令及同步录波等多种录波触发模式。',
+            '支持电能质量事件、外部开关量信号、用户指令及同步录波等多种录波触发模式；支持COMTRADE波形存储格式。',
             '支持 PMU（Phasor Measurement Unit）同步相量测量单元。',
             '支持嵌入式软 PLC，按现场需求编写测控逻辑，实现实时本地测控。',
             '支持 AI 模型预测与控制，由终端内置 GPU 提供增强算力。',

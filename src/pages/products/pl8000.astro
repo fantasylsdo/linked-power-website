@@ -10,7 +10,7 @@ import SiteHeader from '../../components/SiteHeader.astro';
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    <title>PL8000 智能电力监测终端 | Linked Power</title>
+    <title>PL8000 电能质量分析仪 | Linked Power</title>
   </head>
 
   <body class="bg-white text-slate-900 antialiased">
@@ -29,243 +29,348 @@ import SiteHeader from '../../components/SiteHeader.astro';
 
         <span class="px-2">/</span>
 
-        <span>电力监测终端</span>
+        <span>电力监测产品系列</span>
       </div>
 
-      <!-- Hero -->
-      <section
-        class="grid gap-10 py-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:py-14"
+      <!-- 系列产品切换 -->
+      <nav
+        class="mt-6 flex gap-2 overflow-x-auto border-b border-slate-200"
+        aria-label="电力监测产品"
       >
-        <!-- Hero 图片 -->
-        <div
-          class="order-2 relative flex min-h-80 items-center justify-center p-6 lg:order-1"
-          data-pl8000-carousel
+        <button
+          type="button"
+          data-product-tab="pl8000"
+          class="whitespace-nowrap border-b-2 border-brand-red px-4 py-3 text-sm font-bold text-brand-red"
+          aria-controls="pl8000"
+          aria-selected="true"
         >
-          <div class="relative h-80 w-full">
-            <img
-              src="/pl8000/pl8000-view1.png"
-              alt="PaiLogicTM PL8000 智能电力监测终端正面视图"
-              class="absolute inset-0 h-full w-full object-contain opacity-100 transition-opacity duration-500"
-              data-pl8000-slide
-            />
-            <img
-              src="/pl8000/pl8000-view2.png"
-              alt="PaiLogicTM PL8000 智能电力监测终端侧面视图"
-              class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
-              data-pl8000-slide
-            />
-            <img
-              src="/pl8000/pl8000-view3.jpg"
-              alt="PaiLogicTM PL8000 智能电力监测终端应用视图"
-              class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
-              data-pl8000-slide
-            />
-            <img
-              src="/pl8000/pl8000-view4.jpg"
-              alt="PaiLogicTM PL8000 智能电力监测终端界面视图"
-              class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
-              data-pl8000-slide
-            />
+          PL8000 电能质量分析仪
+        </button>
+        <button
+          type="button"
+          data-product-tab="multi-function-meter"
+          class="whitespace-nowrap border-b-2 border-transparent px-4 py-3 text-sm font-bold text-slate-500 hover:text-brand-red"
+          aria-controls="multi-function-meter"
+          aria-selected="false"
+        >
+          多功能电力仪表
+        </button>
+      </nav>
+
+      <!-- PL8000 产品 -->
+      <section id="pl8000" data-product-panel="pl8000">
+
+        <!-- Hero -->
+        <section
+          class="grid gap-10 py-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:py-14"
+        >
+          <!-- Hero 图片 -->
+          <div
+            class="order-2 relative flex min-h-80 items-center justify-center p-6 lg:order-1"
+            data-pl8000-carousel
+          >
+            <div class="relative h-80 w-full">
+              <img
+                src="/pl8000/pl8000-view1.webp"
+                alt="PaiLogic™ PL8000 电能质量分析仪正面视图"
+                class="absolute inset-0 h-full w-full object-contain opacity-100 transition-opacity duration-500"
+                data-pl8000-slide
+              />
+              <img
+                src="/pl8000/pl8000-view2.webp"
+                alt="PaiLogic™ PL8000 电能质量分析仪侧面视图"
+                class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
+                data-pl8000-slide
+              />
+              <img
+                src="/pl8000/pl8000-view3.webp"
+                alt="PaiLogic™ PL8000 电能质量分析仪爆炸图"
+                class="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-500"
+                data-pl8000-slide
+              />
+            </div>
+
+            <button
+              type="button"
+              class="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-xl text-slate-700 shadow-sm hover:bg-white"
+              data-pl8000-prev
+              aria-label="上一张产品视图"
+            >
+              ‹
+            </button>
+            <button
+              type="button"
+              class="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-xl text-slate-700 shadow-sm hover:bg-white"
+              data-pl8000-next
+              aria-label="下一张产品视图"
+            >
+              ›
+            </button>
+
+            <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+              <button type="button" class="h-2.5 w-2.5 rounded-full bg-brand-red" data-pl8000-dot aria-label="查看第 1 张产品视图"></button>
+              <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-pl8000-dot aria-label="查看第 2 张产品视图"></button>
+              <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-pl8000-dot aria-label="查看第 3 张产品视图"></button>
+            </div>
           </div>
 
-          <button
-            type="button"
-            class="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-xl text-slate-700 shadow-sm hover:bg-white"
-            data-pl8000-prev
-            aria-label="上一张产品视图"
-          >
-            ‹
-          </button>
-          <button
-            type="button"
-            class="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-xl text-slate-700 shadow-sm hover:bg-white"
-            data-pl8000-next
-            aria-label="下一张产品视图"
-          >
-            ›
-          </button>
+          <!-- Hero 内容 -->
+          <div class="order-1 lg:order-2">
+            <h1
+              class="max-w-[22ch] text-3xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl"
+            >
+              PaiLogic<sup>TM</sup> PL8000电能质量分析仪
+            </h1>
 
-          <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
-            <button type="button" class="h-2.5 w-2.5 rounded-full bg-brand-red" data-pl8000-dot aria-label="查看第 1 张产品视图"></button>
-            <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-pl8000-dot aria-label="查看第 2 张产品视图"></button>
-            <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-pl8000-dot aria-label="查看第 3 张产品视图"></button>
-            <button type="button" class="h-2.5 w-2.5 rounded-full bg-slate-300" data-pl8000-dot aria-label="查看第 4 张产品视图"></button>
+            <p
+              class="mt-6 max-w-[60ch] text-lg leading-relaxed text-slate-600"
+            >
+              面向新型电力系统打造的高端电力监测终端，兼顾实时测控与多样化应用需求。
+            </p>
           </div>
-        </div>
+        </section>
 
-        <!-- Hero 内容 -->
-        <div class="order-1 lg:order-2">
-          <h1
-            class="max-w-[22ch] text-3xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl"
-          >
-            PaiLogicTM PL8000 智能电力监测终端
-          </h1>
+        <!-- 产品内容 -->
+        <div class="space-y-10 py-8">
 
-          <p
-            class="mt-6 max-w-[60ch] text-lg leading-relaxed text-slate-600"
+          <!-- 产品概述 -->
+          <section
+            id="overview"
+            class="scroll-mt-24 pt-8"
           >
-            面向新型电力系统打造的高端电力监测终端，兼顾实时测控与多样化应用需求。
-          </p>
+            <h2 class="text-2xl font-bold text-[#101b70]">
+              产品概述
+            </h2>
+
+            <p
+              class="mt-4 max-w-4xl text-base leading-8 text-slate-600"
+            >
+              PL8000 按照国际大公司产品标准精心打造，内嵌 Linux 和 RTOS
+              两套系统，同时满足实时测控和应用多样性的双重需求。
+            </p>
+          </section>
+
+          <!-- 基础功能 -->
+          <section
+            id="base-functions"
+            class="scroll-mt-24 pt-8"
+          >
+            <h2 class="text-2xl font-bold text-[#101b70]">
+              基础功能
+            </h2>
+
+            <ul class="mt-5 space-y-4">
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                全电力参数测量，电力参数更新速率达到半波（10ms@50Hz）。
+              </li>
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                对电能质量持续无间隙监测，记录电能质量事件发生的精确时间和数据。
+              </li>
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                高分辨率彩色触摸显示屏，分辨率 640×480 像素。
+              </li>
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                8GB 数据存储，可长周期存储细时间颗粒度历史数据。
+              </li>
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                支持历史趋势、分时电能累计、电能质量事件等多种可配置参数记录。
+              </li>
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                支持通过网页端进行设备参数配置、实时数据显示、故障录波查看，以及历史记录查询和文件下载。
+              </li>
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                支持多达 20 个阈值比较器单元和 40 个布尔运算单元，
+                可配置任意报警和保护逻辑。
+              </li>
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                支持 RS485 和 Ethernet 通讯网络及多种通讯协议。
+              </li>
+
+            </ul>
+          </section>
+
+          <!-- 可选增强功能 -->
+          <section
+            id="enhancements"
+            class="scroll-mt-24 pt-8"
+          >
+            <h2 class="text-2xl font-bold text-[#101b70]">
+              可选增强功能
+            </h2>
+
+            <ul class="mt-5 space-y-4">
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                可配置扩展数字和模拟 I/O 模块，例如温度监测。
+              </li>
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                支持 PTP（IEEE 588）微秒级精确时间同步。
+              </li>
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                支持电能质量事件、外部开关量信号、用户指令及同步录波等多种录波触发模式；支持COMTRADE波形存储格式。
+              </li>
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                支持 PMU 同步相量测量单元。
+              </li>
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                支持嵌入式软 PLC，按现场需求编写测控逻辑，实现实时本地测控。
+              </li>
+
+              <li
+                class="flex gap-3 py-4 leading-7 text-slate-700"
+              >
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                支持 AI 模型预测与控制，由终端内置 GPU 提供增强算力。
+              </li>
+
+            </ul>
+          </section>
+
+          <!-- 定制功能 -->
+          <section
+            id="customization"
+            class="scroll-mt-24 pt-8"
+          >
+            <h2 class="text-2xl font-bold text-[#101b70]">
+              定制功能
+            </h2>
+
+            <p
+              class="mt-4 text-base leading-8 text-slate-600"
+            >
+              可根据用户现场需求定制功能。
+            </p>
+          </section>
+
         </div>
       </section>
 
-      <!-- 产品内容 -->
-      <div class="space-y-10 py-8">
-
-        <!-- 产品概述 -->
+      <!-- 多功能电力仪表 -->
+      <section
+        id="multi-function-meter"
+        data-product-panel="multi-function-meter"
+        class="hidden scroll-mt-24"
+      >
         <section
-          id="overview"
-          class="scroll-mt-24 pt-8"
+          class="grid gap-10 py-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:py-14"
         >
-          <h2 class="text-2xl font-bold text-[#101b70]">
-            产品概述
-          </h2>
+          <!-- Hero 图片 -->
+          <figure class="order-2 flex min-h-80 items-center justify-center p-6 lg:order-1">
+            <img
+              src="/多功能电力仪表.webp"
+              alt="PaiLogic™ 多功能电力仪表正面视图"
+              class="h-80 w-full object-contain"
+            />
+          </figure>
 
-          <p
-            class="mt-4 max-w-4xl text-base leading-8 text-slate-600"
-          >
-            PL8000 按照国际大公司产品标准精心打造，内嵌 Linux 和 RTOS
-            两套系统，同时满足实时测控和应用多样性的双重需求。
-          </p>
+          <!-- Hero 内容 -->
+          <div class="order-1 lg:order-2">
+            <h1
+              class="max-w-[22ch] text-3xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl"
+            >
+              PaiLogic<sup>TM</sup> 多功能电力仪表
+            </h1>
+
+            <p
+              class="mt-6 max-w-[60ch] text-lg leading-relaxed text-slate-600"
+            >
+              一款集多项电力参数测量、双向电能计量、开关量控制与远程通信于一体的多功能电力仪表，适用于配电监测与能效管理。
+            </p>
+          </div>
         </section>
 
-        <!-- 基础功能 -->
-        <section
-          id="base-functions"
-          class="scroll-mt-24 pt-8"
-        >
-          <h2 class="text-2xl font-bold text-[#101b70]">
-            基础功能
-          </h2>
+        <div class="space-y-10 py-8">
+          <!-- 主要功能 -->
+          <section class="scroll-mt-24 pt-8">
+            <h3 class="text-2xl font-bold text-[#101b70]">
+              主要功能
+            </h3>
 
-          <ul class="mt-5 space-y-4">
+            <ul class="mt-5 space-y-4">
+              <li class="flex gap-3 py-4 leading-7 text-slate-700">
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                测量三相电压、三相电流、有功功率、无功功率、频率、功率因数、需量及负荷百分比。
+              </li>
 
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              全电力参数测量，电力参数更新速率达到半波（10ms@50Hz）。
-            </li>
+              <li class="flex gap-3 py-4 leading-7 text-slate-700">
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                支持双向有功电能和无功电能计量，满足能量流向监测与统计需求。
+              </li>
 
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              对电能质量持续无间隙监测，记录电能质量事件发生的精确时间和数据。
-            </li>
+              <li class="flex gap-3 py-4 leading-7 text-slate-700">
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                提供 4 路开关量输入和 2 路开关量输出，可用于状态采集与控制输出。
+              </li>
 
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              高分辨率彩色触摸显示屏，分辨率 640×480 像素。
-            </li>
+              <li class="flex gap-3 py-4 leading-7 text-slate-700">
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                开关量输出可关联电量越限事件，实现越限报警或联动控制。
+              </li>
 
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              8GB 数据存储，可长周期存储细时间颗粒度历史数据。
-            </li>
+              <li class="flex gap-3 py-4 leading-7 text-slate-700">
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                配备 RS485 通信接口，支持 Modbus RTU 协议，便于接入监控和能源管理系统。
+              </li>
 
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              支持历史趋势、分时电能累计、电能质量事件等多种可配置参数记录。
-            </li>
-
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              支持多达 20 个阈值比较器单元和 40 个布尔运算单元，
-              可配置任意报警和保护逻辑。
-            </li>
-
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              支持 RS485 和 Ethernet 通讯网络及多种通讯协议。
-            </li>
-
-          </ul>
-        </section>
-
-        <!-- 可选增强功能 -->
-        <section
-          id="enhancements"
-          class="scroll-mt-24 pt-8"
-        >
-          <h2 class="text-2xl font-bold text-[#101b70]">
-            可选增强功能
-          </h2>
-
-          <ul class="mt-5 space-y-4">
-
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              可配置扩展数字和模拟 I/O 模块，例如温度监测。
-            </li>
-
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              支持 PTP（IEEE 588）微秒级精确时间同步。
-            </li>
-
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              支持电能质量事件、外部数字信号、用户指令及同步录波等多种录波触发模式。
-            </li>
-
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              支持 PMU 同步相量测量单元。
-            </li>
-
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              支持嵌入式软 PLC，按现场需求编写测控逻辑，实现实时本地测控。
-            </li>
-
-            <li
-              class="flex gap-3 py-4 leading-7 text-slate-700"
-            >
-              <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
-              支持 AI 模型预测与控制，由终端内置 GPU 提供增强算力。
-            </li>
-
-          </ul>
-        </section>
-
-        <!-- 定制功能 -->
-        <section
-          id="customization"
-          class="scroll-mt-24 pt-8"
-        >
-          <h2 class="text-2xl font-bold text-[#101b70]">
-            定制功能
-          </h2>
-
-          <p
-            class="mt-4 text-base leading-8 text-slate-600"
-          >
-            可根据用户现场需求定制功能。
-          </p>
-        </section>
-
-      </div>
+              <li class="flex gap-3 py-4 leading-7 text-slate-700">
+                <span class="shrink-0 text-lg leading-7 text-brand-red" aria-hidden="true">•</span>
+                采用 LCD 段码式显示屏，设备运行参数清晰直观，适合现场本地查看。
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
 
     </main>
   </body>
@@ -315,4 +420,60 @@ import SiteHeader from '../../components/SiteHeader.astro';
     carousel.addEventListener('mouseleave', restartTimer);
     restartTimer();
   }
+
+  // 产品系列切换
+  const tabs = Array.from(document.querySelectorAll('[data-product-tab]'));
+  const panels = Array.from(document.querySelectorAll('[data-product-panel]'));
+
+  function showProduct(productId, updateHash = true) {
+    tabs.forEach(tab => {
+      const isActive = tab.getAttribute('aria-controls') === productId;
+      tab.setAttribute('aria-selected', String(isActive));
+      tab.classList.toggle('border-brand-red', isActive);
+      tab.classList.toggle('text-brand-red', isActive);
+      tab.classList.toggle('border-transparent', !isActive);
+      tab.classList.toggle('text-slate-500', !isActive);
+    });
+
+    panels.forEach(panel => {
+      panel.classList.toggle('hidden', panel.getAttribute('id') !== productId);
+    });
+
+    if (updateHash && window.location.hash !== `#${productId}`) {
+      window.history.pushState(null, '', `#${productId}`);
+    }
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const productId = tab.getAttribute('aria-controls');
+      if (productId) showProduct(productId);
+    });
+  });
+
+  function syncProductFromHash() {
+    const hashProduct = window.location.hash.slice(1);
+    if (panels.some(panel => panel.getAttribute('id') === hashProduct)) {
+      showProduct(hashProduct, false);
+    } else {
+      showProduct('pl8000', false);
+    }
+  }
+
+  window.addEventListener('hashchange', syncProductFromHash);
+  syncProductFromHash();
+
+  window.addEventListener('popstate', () => {
+    syncProductFromHash();
+  });
+
+  // 页面加载时根据 URL 中的 hash 显示对应的面板
+  window.addEventListener('load', () => {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+      showProduct(hash, false);
+    } else {
+      showProduct('pl8000', false);
+    }
+  });
 </script>
